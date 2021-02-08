@@ -1,0 +1,51 @@
+.welcomePic
+{
+   
+     background-size:cover; 
+     background-image:url('/assets/img/banner.jpg');
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 150px;
+     //filter: blur(0.1PX);
+     
+}
+.elemIco
+{
+    //background-color: green;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.elemImg
+{
+    height: 100px;
+    width: 100px;
+}
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: rgb(57, 63, 57) 1px solid;
+  }
+  .msgSpan
+  {
+      border: 1px solid black;
+      border-radius: 20px;
+      border-top-left-radius: 0px;
+      margin-top: 55px;
+      margin-left: -15px;
+  }
+  .contactBtn
+  {
+      height: 45px;
+    width: 70px;
+  }
+  .frameworkIco
+  {
+      height: 60px;
+      width: auto;
+  }

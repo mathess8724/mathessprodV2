@@ -1,0 +1,9 @@
+<div *ngIf="!currentCaptcha">
+  <re-captcha
+      (resolved)="resolved($event)"
+      siteKey="6LddZUwaAAAAALiXPHAypZtWLZ69DvmZyZosi_R7"
+    ></re-captcha>
+</div>
+<div *ngIf="currentCaptcha">
+  <app-contact-form></app-contact-form>
+</div>
