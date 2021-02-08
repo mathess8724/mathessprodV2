@@ -21,7 +21,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list'; 
 import { MatDialogModule } from '@angular/material/dialog';
 import { ModalComponent } from './modals/modal.component';
-import { ContactModalComponent } from './modals/contact-modal/contact-modal.component'; 
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import { ContactFormComponent } from './contact-form/contact-form.component'; 
@@ -39,7 +38,6 @@ import {FormsModule, FormGroupDirective,ReactiveFormsModule, NgForm, Validators}
     CaptchaComponent,
     MainNavComponent,
     ModalComponent,
-    ContactModalComponent,
     ContactFormComponent,
   ],
   imports: [
