@@ -27,7 +27,7 @@ export class CaptchaComponent implements OnInit {
     console.log(`Resolved captcha with response: ${captchaResponse}`);
     //console.log('try to connect with token :', captchaResponse);
      axios.post(
-      `https://mathessprod--server.herokuapp.com/api/captcha`,     
+      `https://mathessprodv2.herokuapp.com/api/captcha`,     
       
       {        
         token: captchaResponse
