@@ -1,11 +1,13 @@
-<form class="example-form" style="display: flex; flex-direction: column;">
-    <mat-form-field class="example-full-width">
+<mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+
+<form #f="ngForm"  (ngSubmit)="onSubmit()" class="example-form" style="display: flex; flex-direction: column;">
+  <mat-form-field class="example-full-width">
         <mat-label>Name</mat-label>
-        <input matInput placeholder="" value="">
+        <input  required matInput placeholder="" value="" [formControl]="name">
       </mat-form-field>        
-    <mat-form-field class="example-full-width">
+    <mat-form-field class="example-full-width" name="mailInput">
       <mat-label>Email</mat-label>
-      <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+      <input value="dd@g.com"  type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
              placeholder="Ex. pat@example.com">
       <mat-hint></mat-hint>
       <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
@@ -17,8 +19,11 @@
     </mat-form-field>
     <mat-form-field class="example-full-width">
         <mat-label>Leave a comment</mat-label>
-        <textarea matInput placeholder="Ex. It makes me feel..." 
+        <textarea [formControl]="msg" matInput placeholder="Ex. It makes me feel..." 
                     style="min-height: 110px;"></textarea>
-      </mat-form-field>
-      <button mat-raised-button color="primary">Send</button>
-  </form>
+      </mat-form-field>     
+      <button disabled="{{ loading }}" *ngIf="!mailSent && !error" mat-raised-button color="primary">Send</button>
+      <button class="popupButton"  *ngIf="mailSent" mat-raised-button color="accent">message sent !</button>
+      <button class="popupButton"  *ngIf="error" mat-raised-button color="warn">Ooops, mail not sent!</button>
+    </form>
+ 
