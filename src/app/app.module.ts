@@ -23,6 +23,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { ModalComponent } from './modals/modal.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
+import {MatGridListModule} from '@angular/material/grid-list'; 
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';  
 import { ContactFormComponent } from './contact-form/contact-form.component'; 
@@ -61,6 +62,7 @@ import {FormsModule, FormGroupDirective,ReactiveFormsModule, NgForm, Validators}
     ReactiveFormsModule,
     MatProgressBarModule,
     MatProgressSpinnerModule,
+    MatGridListModule,
   ],
   providers: [{ provide: RECAPTCHA_V3_SITE_KEY, useValue: "6LfuVEwaAAAAAO0VP4jXXBB7fUeyVolt5YPuJ6jb" }],
   bootstrap: [AppComponent]
