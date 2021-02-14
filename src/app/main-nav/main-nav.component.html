@@ -1,15 +1,35 @@
-<mat-sidenav-container class="sidenav-container" >
-  <mat-sidenav color="primary" #drawer class="sidenav" fixedInViewport
+<mat-sidenav-container class="sidenav-container" color="light" >
+  <mat-sidenav color="light" #drawer class="sidenav" fixedInViewport
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>
-     menu
-    </mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item href="#">Home</a>
-      <a mat-list-item href="#">Projects</a>
-      <a mat-list-item href="/contact">Contact</a>
+   
+     <div style="height: 180px; ">
+     <mat-toolbar color="primary">
+       <mat-toolbar-row></mat-toolbar-row>
+       <mat-toolbar-row></mat-toolbar-row>
+       <mat-toolbar-row></mat-toolbar-row>
+     </mat-toolbar>
+     </div>
+
+     <div>
+       
+    </div>
+
+<p style="text-align: center;">Menu</p>  
+  
+<hr style="color: black;">
+    <mat-nav-list >
+      
+     
+    
+      
+      <a mat-list-item href="#"> <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>Home</a>
+      <hr style="color: black; ">
+      <a mat-list-item href="#"> <mat-icon aria-hidden="false" aria-label="Example home icon">work</mat-icon>Projects</a>
+      <hr style="color: black;">
+      <a mat-list-item href="/contact"> <mat-icon aria-hidden="false" aria-label="Example home icon">email</mat-icon>Contact</a>
+      <hr style="color: black;">
       
 
     </mat-nav-list>
