@@ -3,7 +3,9 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar>
+     menu
+    </mat-toolbar>
     <mat-nav-list>
       <a mat-list-item href="#">Home</a>
       <a mat-list-item href="#">Projects</a>
@@ -22,7 +24,7 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span  >Matheesprod</span>
+      <span  >Mathessprod</span>
       <span class="spacer"></span>
       <a href="#">Home</a>
       <a href="#">Projects</a>

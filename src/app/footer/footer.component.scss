@@ -3,6 +3,10 @@ $primary : #03a9f4;
 .footerContainer{   
     margin-top: 20px;
     min-height: 100px;
-    background-color: $primary;
+}
+mat-toolbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
 }
 
