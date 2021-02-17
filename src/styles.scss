@@ -1,31 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import '~@angular/material/theming';
+@import './palette.scss';
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 $mat-myapp-primary: (
-    50 : #e3e6e7,
-    100 : #bac0c2,
-    200 : #8c969a,
-    300 : #5e6c72,
-    400 : #3c4d53,
-    500 : #192d35,
-    600 : #162830,
-    700 : #122228,
-    800 : #0e1c22,
-    900 : #081116,
-    A100 : #58b5ff,
-    A200 : #259eff,
-    A400 : #0086f1,
-    A700 : #0077d7,
+    50 : #eceff1,
+    100 : #cfd8dc,
+    200 : #b0bec5,
+    300 : #90a4ae,
+    400 : #78919c,
+    500 : #607d8b,
+    600 : #587583,
+    700 : #4e6a78,
+    800 : #44606e,
+    900 : #334d5b,
+    A100 : #abe1ff,
+    A200 : #78ceff,
+    A400 : #45bcff,
+    A700 : #2bb3ff,
     contrast: (
         50 : #000000,
         100 : #000000,
         200 : #000000,
-        300 : #ffffff,
-        400 : #ffffff,
+        300 : #000000,
+        400 : #000000,
         500 : #ffffff,
         600 : #ffffff,
         700 : #ffffff,
@@ -33,8 +34,8 @@ $mat-myapp-primary: (
         900 : #ffffff,
         A100 : #000000,
         A200 : #000000,
-        A400 : #ffffff,
-        A700 : #ffffff,
+        A400 : #000000,
+        A700 : #000000,
     )
 );
 
@@ -75,5 +76,6 @@ $primary: mat-palette($mat-myapp-primary,500);
 $accent: mat-palette($mat-myapp-accent);
 
 $theme: mat-light-theme($primary, $accent);
+
 
 @include angular-material-theme($theme);

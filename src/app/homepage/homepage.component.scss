@@ -1,3 +1,7 @@
+@import '/src/palette.scss';
+@import '/src/palette.scss';
+
+
 .welcomePic
 {
    
@@ -7,12 +11,24 @@
      background-position: center;
      height: 150px;
      //filter: blur(0.1PX);
+     display: none;
      
+}
+.card-container{
+    height: 500px;
+    background-color: $primary-color;
 }
 @media (min-width: 768px){
     .welcomePic{
         height: 250px;
     }
+ /*    .mat-card-image{
+        height: 300px;
+        width: 300px;
+    }
+    mat-card{
+        height: 500px;
+    } */
 }
 .elemIco
 {
