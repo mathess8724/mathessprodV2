@@ -1,12 +1,16 @@
 //@import'/src/styles.scss';
+@import'/src/palette.scss';
 $primary : #03a9f4;
 .footerContainer{   
-    margin-top: 20px;
+    //margin-top: 20px;
     min-height: 100px;
+    display: none;
 }
 mat-toolbar a{
     text-decoration: none;
     color: white;
     font-size: 12px;
 }
-
+.mat-toolbar.mat-primary {
+    background-color: $primary-color-dark;
+}

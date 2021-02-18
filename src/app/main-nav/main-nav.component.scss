@@ -1,4 +1,5 @@
 @import'/src/styles.scss';
+@import'/src/palette.scss';
 .sidenav-container {
   height: 100%;
 }
@@ -8,10 +9,12 @@
 }
 
 .sidenav .mat-toolbar {
- 
+
 }
 
+
 .mat-toolbar.mat-primary {
+  background-color: $primary-color-dark;
   position: sticky;
   top: 0;
   z-index: 1;

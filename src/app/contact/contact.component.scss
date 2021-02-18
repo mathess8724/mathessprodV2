@@ -1,3 +1,8 @@
+@import '/src/palette.scss';
+
+.primary-background{
+    background-color: $primary-color;
+}
 .contactImg
 {
     height: 150px;

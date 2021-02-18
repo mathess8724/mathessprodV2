@@ -1,7 +1,8 @@
 @import '/src/palette.scss';
-@import '/src/palette.scss';
 
-
+.primary-background{
+    background-color: $primary-color;
+}
 .welcomePic
 {
    
@@ -14,9 +15,18 @@
      display: none;
      
 }
-.card-container{
-    height: 500px;
-    background-color: $primary-color;
+.div1-p{
+    color: $divider-color;
+}
+.div2-p{
+    color: $secondary-text-color;
+}
+.divider-background{
+    background-color: $divider-color;
+}
+.divider-img{
+    height: 200px;
+    width: 200px;
 }
 @media (min-width: 768px){
     .welcomePic{

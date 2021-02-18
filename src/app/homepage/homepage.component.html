@@ -1,15 +1,191 @@
 <app-main-nav>
     <div class=" welcomePic" >
     </div>
-    <h1 style="text-align: center; margin-top: 25px; margin-bottom: 25px;">Welcome to Mathessprod !</h1>
+<!--     <h1 style="text-align: center; margin-top: 25px; margin-bottom: 25px;">Welcome to Mathessprod !</h1>
     <h3 style="text-align: center ;margin-bottom: 20px;">What I can do ?</h3>   
-    <!--   
-    <div class="card-container">
+ -->    
+ <mat-grid-list class="primary-background card-container"  cols="12" rowHeight="45vh" 
+                    style="position: relative;">
+    <mat-grid-tile  [colspan]="1"></mat-grid-tile>
+    <mat-grid-tile style="display: flex; justify-content: center; align-items: center;
+                          " [colspan]="11">
+       <img src="assets/img/responsive.png" alt="responsive design"
+       style="height: 250px; width: 350px; margin-top: 85px; margin-left: 60px;">
+    </mat-grid-tile>
+    <mat-grid-tile  [colspan]="11" >
+        <div style="width: 100%;height: 100%;
+                    display: flex; flex-direction: column; align-items: flex-start; 
+                    padding-left: 25px;">
+            <h1 style="text-align: center; color: white; 
+                        margin-left: -10px; margin-top: 40px; font-size: 36px;">
+                Responsive design
+            </h1>  
+            <p class="div1-p" style=" margin-top: 25px; font-size: 20px; ">Create a fully responsive web App and enjoy it on all of your devices !</p>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1">
+       
+    </mat-grid-tile>   
+  </mat-grid-list>
+ <mat-grid-list class="divider-background card-container"  cols="12" rowHeight="45vh" 
+                    style="position: relative;">
+                    <mat-grid-tile style="display: flex; justify-content: center; align-items: center;
+                                          " [colspan]="11">
+                       <img src="assets/img/smartphone.png" alt="smartphone"
+                       style="height: 150px; width: 150px; margin-left: -80px; ">
+                    </mat-grid-tile>
+    <mat-grid-tile  [colspan]="1"></mat-grid-tile>
+    <mat-grid-tile  [colspan]="11" >
+        <div style="width: 100%;height: 100%;
+                    display: flex; flex-direction: column; align-items: flex-end; 
+                    padding-left: 25px;">
+            <h1 style="text-align: end; color: white; 
+                        margin-left: -10px; margin-top: 40px; font-size: 36px;">
+               Mobile Apps
+            </h1>  
+            <p class="div2-p" style=" margin-top: 25px; font-size: 20px; ">Create a mobile App and enjoy it on Andoid and IOS !</p>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1">
+       
+    </mat-grid-tile>   
+  </mat-grid-list>
+  <mat-grid-list class="primary-background card-container"  cols="12" rowHeight="45vh" 
+                    style="position: relative;">
+    <mat-grid-tile  [colspan]="1"></mat-grid-tile>
+    <mat-grid-tile style="display: flex; justify-content: center; align-items: center;
+                          " [colspan]="11">
+       <img src="assets/img/code-2.png" alt="QR code"
+       style="height: 150px; width: 250px; margin-top: 85px; margin-left: 60px;">
+    </mat-grid-tile>
+    <mat-grid-tile  [colspan]="11" >
+        <div style="width: 100%;height: 100%;
+                    display: flex; flex-direction: column; align-items: flex-start; 
+                    padding-left: 25px;">
+            <h1 style="text-align: center; color: white; 
+                        margin-left: -10px; margin-top: 40px; font-size: 36px;">
+                QR code based
+            </h1>  
+            <p class="div1-p" style=" margin-top: 25px; font-size: 20px; ">Create a QR code based web App, mobile App or both and enjoy it on all of your devices !</p>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1">
+       
+    </mat-grid-tile>   
+  </mat-grid-list>
+  <div style="height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;" class="divider-background">
+    <mat-card class="divider-background" style="border-radius: 0; border: none; box-shadow: none;">
+        <mat-grid-list cols="3" rowHeight="100px">
+            <mat-grid-tile>
+                <div style="display: flex; flex-direction: column; justify-content: center; 
+                                    align-items: center;">
+                            <img class="frameworkIco" src="assets/img/angular.png" alt="angular">
+                            <p>Angular 11</p>
+                        </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div style="display: flex; flex-direction: column; justify-content: center; 
+                align-items: center;">
+        <img class="frameworkIco" src="assets/img/react.png" alt="react">
+        <p>React</p>
+    </div>
+    </mat-grid-tile>
+            <mat-grid-tile><div style="display: flex; flex-direction: column; justify-content: center; 
+                                    align-items: center;">
+                            <img class="frameworkIco" src="assets/img/react-native.png" alt="react native">
+                            <p>React native</p>
+                        </div></mat-grid-tile>
+            <mat-grid-tile>
+                <div style="display: flex; flex-direction: column; justify-content: center; 
+                align-items: center;">
+        <img class="frameworkIco" src="assets/img/expo.png" alt="expo cli">
+        <p>Expo</p>
+    </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div style="display: flex; flex-direction: column; justify-content: center; 
+                align-items: center;">
+        <img class="frameworkIco" src="assets/img/nodejs.png" alt="node js">
+        <p>Node js</p>
+    </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div style="display: flex; flex-direction: column; justify-content: center; 
+                align-items: center;">
+        <img class="frameworkIco" src="assets/img/bootstrap.png" alt="Bootsap">
+        <p>Bootstrap</p>
+    </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div style="display: flex; flex-direction: column; justify-content: center; 
+                align-items: center;">
+        <img class="frameworkIco" src="assets/img/html5.png" alt="HTML 5">
+        <p>HTML 5</p>
+    </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div style="display: flex; flex-direction: column; justify-content: center; 
+                align-items: center;">
+        <img class="frameworkIco" src="assets/img/css3.png" alt="CSS 3">
+        <p>CSS 3</p>
+    </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div style="display: flex; flex-direction: column; justify-content: center; 
+                align-items: center;">
+        <img class="frameworkIco" src="assets/img/js.png" alt="Javascript">
+        <p>Javascrypt</p>
+    </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div style="display: flex; flex-direction: column; justify-content: center; 
+                align-items: center;">
+        <img class="frameworkIco" src="assets/img/firebase2.png" alt="Firebase">
+        <p>Firebase</p>
+    </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div style="display: flex; flex-direction: column; justify-content: center; 
+                align-items: center;">
+        <img class="frameworkIco" src="assets/img/php.png" alt="PHP">
+        <p>PHP</p>
+    </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div style="display: flex; flex-direction: column; justify-content: center; 
+                align-items: center;">
+        <img class="frameworkIco" src="assets/img/mysql.png" alt="Mysql">
+        <p>My Sql</p>
+    </div>
+            </mat-grid-tile>
+          
+          </mat-grid-list>
+          <mat-card-title style="text-align: center; margin-top: 35px; color: white;">Framework & libraries used</mat-card-title>
 
+        </mat-card>
+        <button style="margin-top: 30px;" routerLink="/contact" mat-raised-button color="accent">Contact me</button>
+
+  </div>
+  
+   
+    <!-- <div class="card-container primary-background" style="width: 100%; 
+                                padding: 0; background-color: grey;">
+        <div class="row" style="height: 100%; width: 100%; display: flex;
+                                justify-content: center;">
+            <div class="col-12" style="background-color: greenyellow;">
+                <img src="assets/img/responsive.png" alt="responsive design"
+                        style="height: 150px; width: 150px;">
+            </div>
+            <div class="col-12">
+                <h1>Responsive design</h1>
+
+            </div>
+
+        </div>
     </div> -->
-    <mat-card style="margin-bottom: 45px; border-radius: 0px; padding-bottom: 0; padding-top: 0; min-height: 250px;">
+<!--     <mat-card style="margin-bottom: 45px; border-radius: 0px; padding-bottom: 0; padding-top: 0; min-height: 250px;">
  
-        <img  mat-card-image src="assets/img/black_responsive.png" alt="responsive design">
+        <img  mat-card-image src="assets/img/responsive.png" alt="responsive design">
         <mat-card-title style="text-align: center;">Responsive web Apps</mat-card-title>
     </mat-card>
     <mat-card style="margin-bottom: 45px;" >
@@ -115,5 +291,5 @@
             <button routerLink="/contact" mat-raised-button color="accent">Contact me</button>
         </div>
     </mat-grid-list>
-    <app-footer></app-footer>
+ -->    <app-footer></app-footer>
 </app-main-nav>
